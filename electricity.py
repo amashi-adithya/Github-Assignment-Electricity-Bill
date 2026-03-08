@@ -3,6 +3,7 @@ client_type = input("Enter consumer type (domestic/corporate/religious): ")
 units = float(input("Enter electricity units used: "))
 bill = 0
 
+
 #Calculation Feature
 if client_type == 'domestic':
     if units <= 100:
@@ -21,3 +22,9 @@ elif client_type == "religious":
 # SSCL Tax
 sscl = bill * 0.025
 total_bill = bill + sscl
+
+# Output
+print("Consumer Type:", client_type)
+print("Electricity Units:", units)
+print("Total Bill: Rs.", bill)
+
