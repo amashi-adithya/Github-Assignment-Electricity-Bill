@@ -12,10 +12,10 @@ if client_type == 'domestic':
     else:
         bill = (100 * 10) + (100 * 15) + (units - 200) * 20
 
-elif consumer_type == "corporate":
+elif client_type == "corporate":
     bill = units * 25
 
-elif consumer_type == "religious":
+elif client_type == "religious":
     bill = units * 5
 
 # SSCL Tax
